@@ -9,6 +9,31 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
    
 </head>
+<style>
+  /* Custom Styles */
+  .bottom-nav {
+      background-color: brown;
+      padding: 10px 0;
+      border-top: 4px solid brown;
+  }
+  .bottom-nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      padding: 10px 20px;
+      display: inline-block;
+  }
+  .bottom-nav a:hover {
+      background-color: darkred;
+      color: white;
+  }
+  @media (max-width: 768px) {
+      .bottom-nav a {
+          font-size: 14px;
+          padding: 10px 15px;
+      }
+  }
+</style>
 <body>
     <div class="top-nav">
         <a href="/html/index.html">HOME</a>
@@ -25,18 +50,48 @@
         <p>Education, Research, and Service to Society</p>
     </div>
     
-    <div class="bottom-nav">
-        <a href="#">FACULTY OF SCIENCE</a>
-        <a href="#">FACULTY OF SOCIAL SCIENCE AND HUMANITIES</a>
-        <a href="#">FACULTY OF ENGINEERING</a>
-        <a href="#">FACULTY OF DEVELOPMENT STUDIES</a>
-        <a href="#">FACULTY OF EDUCATION</a>
-        <a href="#">INSTITUTE OF FOREIGN LANGUAGES</a>
-        <a href="#">INSTITUTE FOR INTERNATIONAL STUDIES AND PUBLIC POLICY</a>
-        <a href="#">CENTERS</a>
-        <a href="#">OFFICES</a>
-        <a href="#">CONFERENCES</a>
-    </div>
+       <!-- Bottom navigation with Burger menu for small screens -->
+<nav class="navbar navbar-expand-lg navbar-light bottom-nav">
+  <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bottomNav" aria-controls="bottomNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="bottomNav">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">FACULTY OF SCIENCE</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">FACULTY OF SOCIAL SCIENCE AND HUMANITIES</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">FACULTY OF ENGINEERING</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">FACULTY OF DEVELOPMENT STUDIES</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">FACULTY OF EDUCATION</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">INSTITUTE OF FOREIGN LANGUAGES</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">INSTITUTE FOR INTERNATIONAL STUDIES AND PUBLIC POLICY</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">CENTERS</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">OFFICES</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">CONFERENCES</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
 
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
